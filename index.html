@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice web site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="Index.css"> -->
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 15px;
+            font-family:  sans-serif;
+        }
+        .header{
+            height: 80px;
+        }
+        .nav-container{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+        .navbar{
+            display: flex;
+            gap: 20px;
+        }
+        ul>li{
+            list-style: none;
+            float: left;
+            padding-top: 10px;
+            
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        .navbrand{
+            padding-top: 20px;
+        }
+        .navbrand>img{
+            height:35px;width:35px;
+        }
+        .home-container{
+            height:74vh;
+            width: 100%;
+            background: url(pics/bg1.jpeg) no-repeat center;
+            background-size:cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            button{
+            height: 40px;width:100px;
+            background-image:linear-gradient(to right,#7846ca,#4040e4,#320ae4);
+            color: #fff;
+        }
+        .home{
+            height: fit-content;
+            width: 1000px;
+            display: flex;justify-self: center;
+            align-items: center;
+            padding: 20px;
+            line-height: 30px;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: fit-content;
+            height: fit-content;
+            gap: 40px;
+            padding: 20px;
+            color: #000;
+            
+        }
+        .card>div{
+            height: 300px;width: 350px;
+            text-align: center;
+            padding:0 20px;
+        }
+        .glyphicon{
+            font-size: 50px;
+            color: #020202;
+        }
+    
+        .scroll-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .bar-img{
+            width: 60%;
+            height: 80vh;
+            background: url(pics/scrl1.jpeg) no-repeat center;
+            background-size: cover;
+        }
+    
+        .blue-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            background-color: #1f193b;
+            color: #fff;
+        }
+        .per{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            gap: 40px;
+            padding: 100px 0;
+    
+        }
+        .per > div{
+            height: 450px;width: 450px;
+        }
+    
+        .per .ch1-img{
+            background: url(pics/scrl2.png) no-repeat center;
+            height: 450px;width: 500px; 
+        }
+        .footer>div{
+            height: 250px;
+            width: 350px;
+        }
+        .fa {
+            padding: 7px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px ;
+            border: 2px solid black;
+            color: #000;
+            border-radius: 50%;
+        }
+          
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .btn-ok{
+            background-color:blue;
+            color:#000;
+            height:40px;
+            width:40px;
+            position: relative;
+            left: -10px;
+        }
+        input{
+            height: 40px;
+        }    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-container">
+            <div class="navbrand"><img src="pics/brand.jpeg" alt=""></div>
+            <div class="navbar-sec">
+                <ul class="navbar" style="padding-top:10px ;">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Pricing</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#">Components</a></li>
+                    <li class="btn" style="margin-top:-10px;"><button >Download</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-container">
+        <div class="home">
+            <div style="height: fit-content;width:500px;color:#fff;">
+                <h2 style="font-size: 36px;">Hello World !</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Hic neque quibusdam itaque minima nemo iure aperiam doloribus 
+                    eaque rerum explicabo excepturi consectetur, 
+                    ab praesentium? Sit tempora magnam minus nihil similique?</p>
+                <button>Download</button>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="margin-top: 100px;">
+        <div class="sec">
+            <div style="display:flex;justify-content:center;align-item:center;">
+                <div style="height:200px;width:700px;text-align: center; color:#000;padding:30px;">
+                    <h1 style="font-size: 40px;">Vivamus laoreet</h1><br>
+                    <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
+                        orta non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum.</p>
+                </div>
+            </div>
+            <div style="display: flex;justify-content:center;align:center; padding:30px">
+                <div class="card" style="display: flex;justify-content: center;">
+                    <div class="card1">
+                        <span class="glyphicon glyphicon-comment" style="color: #9b9797;"></span>
+                        <h1>Consectetur</h1><br>
+                        <p style="text-align: left;">Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet 
+                            consectetur adipiscing. Porta non pulvinar neque laoreet. 
+                            Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
+                             lacus. Turpis egestas pretium aenean pharetra magna ac.</p>
+                    </div>
+                    <div class="card2">
+                        <span class="glyphicon glyphicon-heart" style="color: rgb(17, 0, 255);"></span>
+                        <h1>Malesuada</h1><br>
+                        <p style="text-align: left;">Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet 
+                            consectetur adipiscing. Porta non pulvinar neque laoreet. 
+                            Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
+                             lacus. Turpis egestas pretium aenean pharetra magna ac.</p>
+                    </div>
+                    <div class="card3">
+                        <span class="glyphicon glyphicon-bell" style="color: #e7b324;"></span>
+                        <h1>Phasellus</h1><br>
+                        <p style="text-align: left;">Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet 
+                            consectetur adipiscing. Porta non pulvinar neque laoreet. 
+                            Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat
+                             lacus. Turpis egestas pretium aenean pharetra magna ac.</p>
+                    </div>
+                </div>
+            </div><hr>
+        </div>
+    </div>
+    <div class="scroll-bar" style="padding: 2%;">
+        <div class="bar-img"></div>
+    </div>
+    <section style="margin-top: 6%;">
+        <div class="blue-bar">
+            <div style="display:flex;justify-content:center;align:center;padding:4% 0">
+                <div style="height:fit-content;width:fit-content;text-align: center; padding:0 20%;">
+                    <h1 style="font-size: 40px;">Vivamus laoreet</h1>
+                    <p style="padding: 20px;">Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit 
+                        amet consectetur adipiscing. Porta non pulvinar neque laoreet. 
+                        Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. 
+                        Turpis egestas pretium aenean pharetra magna ac. Id cursus metus aliquam eleifend mi.</p>
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="display:flex;justify-content: center;align-items: center;">
+        <div class="per" style="color: #000;">
+
+            <div class="ch1-img"></div>
+
+            <div style="display: flex;flex-direction:column;padding:60px 10px 10px 20px">
+
+                <div class="ch2-txt">
+                    <div style="display: flex;gap:20px">
+                        <span class="glyphicon glyphicon-ok-circle" style="font-size: 30px;color:blue;"></span>
+                        <div>
+                            <h1 style="position: relative;top:-25px; font-size:30px;">Dui augue</h1>
+                            <p style="position: relative;top:-25px">Auctor augue mauris augue neque.Posuerelorem ipsum 
+                                dolor sit amet consectetur adipiscing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ch2-txt">
+                    <div style="display: flex;gap:20px">
+                        <span class="glyphicon glyphicon-ok-circle" style="font-size: 30px;color:blue;"></span>
+                        <div>
+                            <h1 style="position: relative;top:-25px; font-size:30px;">Malesuada</h1>
+                            <p style="position: relative;top:-25px">Auctor augue mauris augue neque.Posuerelorem ipsum 
+                                dolor sit amet consectetur adipiscing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ch2-txt">
+                    <div style="display: flex;gap:20px">
+                        <span class="glyphicon glyphicon-ok-circle" style="font-size: 30px;color:blue;"></span>
+                        <div>
+                            <h1 style="position: relative;top:-25px; font-size:30px;">Bibendum</h1>
+                            <p style="position: relative;top:-25px">Auctor augue mauris augue neque.Posuerelorem ipsum 
+                                dolor sit amet consectetur adipiscing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="display:flex;justify-content:center;align-item:center;margin-top:-100px">
+        <div style="display: flex;flex-wrap: wrap;gap:100px;padding:20px">
+            <div><img src="pics/cap1.jpeg" alt="" style="height: 70px; width:250px;padding:10px"></div>
+            <div><img src="pics/cap2.jpeg" alt="" style="height: 70px; width:250px;padding:10px"></div>
+            <div><img src="pics/cap3.jpeg" alt="" style="height: 70px; width:250px;padding:10px"></div>
+        </div>
+    </section><hr style="margin-top: 100px;">
+
+
+    <footer style="display:flex;justify-content:center;align-item:center;color:#000">
+        <div class="footer" style="display: flex;flex-wrap: wrap;gap:10px;padding:20px">
+            <div class="fo-sec1" style="padding: 30px">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Nunc sit amet consectetur dolor</p>
+            </div>
+            <div class="fo-sec2" style="padding: 30px">
+                <h3>Do you like ? Share this !</h3>
+                <div style="display: flex;">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+                <p>© Untitled | Website created with Mashup Template/Unsplash</p>
+            </div>
+            <div class="fo-sec3" style="padding:30px">
+                <h3>Subscribe to newsletter</h3>
+                <form action="">
+                    <input type="text" name="" id="">
+                    <span><button class="btn-ok">Ok</button></span>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
